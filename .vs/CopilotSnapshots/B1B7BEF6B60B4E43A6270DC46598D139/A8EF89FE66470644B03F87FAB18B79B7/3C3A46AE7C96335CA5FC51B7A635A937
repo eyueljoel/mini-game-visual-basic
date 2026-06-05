@@ -1,0 +1,201 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.btnRock = New System.Windows.Forms.Button()
+        Me.btnPaper = New System.Windows.Forms.Button()
+        Me.btnScissors = New System.Windows.Forms.Button()
+        Me.btnLizard = New System.Windows.Forms.Button()
+        Me.btnSpock = New System.Windows.Forms.Button()
+        Me.lblPlayerScore = New System.Windows.Forms.Label()
+        Me.lblComputerScore = New System.Windows.Forms.Label()
+        Me.lblResult = New System.Windows.Forms.Label()
+        Me.lstHistory = New System.Windows.Forms.ListBox()
+        Me.lblMostChosen = New System.Windows.Forms.Label()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.lblPlayerChoice = New System.Windows.Forms.Label()
+        Me.lblComputerChoice = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'btnRock
+        '
+        Me.btnRock.Location = New System.Drawing.Point(12, 12)
+        Me.btnRock.Name = "btnRock"
+        Me.btnRock.Size = New System.Drawing.Size(120, 40)
+        Me.btnRock.TabIndex = 0
+        Me.btnRock.Text = "Rock"
+        Me.btnRock.UseVisualStyleBackColor = True
+        AddHandler Me.btnRock.Click, AddressOf Me.btnRock_Click
+        '
+        'btnPaper
+        '
+        Me.btnPaper.Location = New System.Drawing.Point(138, 12)
+        Me.btnPaper.Name = "btnPaper"
+        Me.btnPaper.Size = New System.Drawing.Size(120, 40)
+        Me.btnPaper.TabIndex = 1
+        Me.btnPaper.Text = "Paper"
+        Me.btnPaper.UseVisualStyleBackColor = True
+        AddHandler Me.btnPaper.Click, AddressOf Me.btnPaper_Click
+        '
+        'btnScissors
+        '
+        Me.btnScissors.Location = New System.Drawing.Point(264, 12)
+        Me.btnScissors.Name = "btnScissors"
+        Me.btnScissors.Size = New System.Drawing.Size(120, 40)
+        Me.btnScissors.TabIndex = 2
+        Me.btnScissors.Text = "Scissors"
+        Me.btnScissors.UseVisualStyleBackColor = True
+        AddHandler Me.btnScissors.Click, AddressOf Me.btnScissors_Click
+        '
+        'btnLizard
+        '
+        Me.btnLizard.Location = New System.Drawing.Point(390, 12)
+        Me.btnLizard.Name = "btnLizard"
+        Me.btnLizard.Size = New System.Drawing.Size(120, 40)
+        Me.btnLizard.TabIndex = 3
+        Me.btnLizard.Text = "Lizard"
+        Me.btnLizard.UseVisualStyleBackColor = True
+        AddHandler Me.btnLizard.Click, AddressOf Me.btnLizard_Click
+        '
+        'btnSpock
+        '
+        Me.btnSpock.Location = New System.Drawing.Point(516, 12)
+        Me.btnSpock.Name = "btnSpock"
+        Me.btnSpock.Size = New System.Drawing.Size(120, 40)
+        Me.btnSpock.TabIndex = 4
+        Me.btnSpock.Text = "Spock"
+        Me.btnSpock.UseVisualStyleBackColor = True
+        AddHandler Me.btnSpock.Click, AddressOf Me.btnSpock_Click
+        '
+        'lblPlayerScore
+        '
+        Me.lblPlayerScore.AutoSize = True
+        Me.lblPlayerScore.Location = New System.Drawing.Point(12, 70)
+        Me.lblPlayerScore.Name = "lblPlayerScore"
+        Me.lblPlayerScore.Size = New System.Drawing.Size(82, 13)
+        Me.lblPlayerScore.TabIndex = 5
+        Me.lblPlayerScore.Text = "Player: 0"
+        '
+        'lblComputerScore
+        '
+        Me.lblComputerScore.AutoSize = True
+        Me.lblComputerScore.Location = New System.Drawing.Point(138, 70)
+        Me.lblComputerScore.Name = "lblComputerScore"
+        Me.lblComputerScore.Size = New System.Drawing.Size(98, 13)
+        Me.lblComputerScore.TabIndex = 6
+        Me.lblComputerScore.Text = "Computer: 0"
+        '
+        'lblPlayerChoice
+        '
+        Me.lblPlayerChoice.AutoSize = True
+        Me.lblPlayerChoice.Location = New System.Drawing.Point(12, 95)
+        Me.lblPlayerChoice.Name = "lblPlayerChoice"
+        Me.lblPlayerChoice.Size = New System.Drawing.Size(87, 13)
+        Me.lblPlayerChoice.TabIndex = 7
+        Me.lblPlayerChoice.Text = "Your choice: -"
+        '
+        'lblComputerChoice
+        '
+        Me.lblComputerChoice.AutoSize = True
+        Me.lblComputerChoice.Location = New System.Drawing.Point(138, 95)
+        Me.lblComputerChoice.Name = "lblComputerChoice"
+        Me.lblComputerChoice.Size = New System.Drawing.Size(101, 13)
+        Me.lblComputerChoice.TabIndex = 8
+        Me.lblComputerChoice.Text = "Computer choice: -"
+        '
+        'lblResult
+        '
+        Me.lblResult.AutoSize = True
+        Me.lblResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblResult.Location = New System.Drawing.Point(12, 120)
+        Me.lblResult.Name = "lblResult"
+        Me.lblResult.Size = New System.Drawing.Size(64, 17)
+        Me.lblResult.TabIndex = 9
+        Me.lblResult.Text = "Result"
+        '
+        'lstHistory
+        '
+        Me.lstHistory.FormattingEnabled = True
+        Me.lstHistory.Location = New System.Drawing.Point(12, 150)
+        Me.lstHistory.Name = "lstHistory"
+        Me.lstHistory.Size = New System.Drawing.Size(624, 160)
+        Me.lstHistory.TabIndex = 10
+        '
+        'lblMostChosen
+        '
+        Me.lblMostChosen.AutoSize = True
+        Me.lblMostChosen.Location = New System.Drawing.Point(12, 320)
+        Me.lblMostChosen.Name = "lblMostChosen"
+        Me.lblMostChosen.Size = New System.Drawing.Size(116, 13)
+        Me.lblMostChosen.TabIndex = 11
+        Me.lblMostChosen.Text = "Most chosen move: -"
+        '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(516, 320)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(120, 30)
+        Me.btnReset.TabIndex = 12
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        AddHandler Me.btnReset.Click, AddressOf Me.btnReset_Click
+        '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(516, 360)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(120, 30)
+        Me.btnQuit.TabIndex = 13
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        AddHandler Me.btnQuit.Click, AddressOf Me.btnQuit_Click
+        '
+        'Form1
+        '
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(650, 410)
+        Me.Controls.Add(Me.btnRock)
+        Me.Controls.Add(Me.btnPaper)
+        Me.Controls.Add(Me.btnScissors)
+        Me.Controls.Add(Me.btnLizard)
+        Me.Controls.Add(Me.btnSpock)
+        Me.Controls.Add(Me.lblPlayerScore)
+        Me.Controls.Add(Me.lblComputerScore)
+        Me.Controls.Add(Me.lblPlayerChoice)
+        Me.Controls.Add(Me.lblComputerChoice)
+        Me.Controls.Add(Me.lblResult)
+        Me.Controls.Add(Me.lstHistory)
+        Me.Controls.Add(Me.lblMostChosen)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnQuit)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.Name = "Form1"
+        Me.Text = "RPSLS - Rock Paper Scissors Lizard Spock"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+    End Sub
+
+End Class
